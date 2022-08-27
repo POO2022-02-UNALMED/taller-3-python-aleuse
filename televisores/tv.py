@@ -38,12 +38,14 @@ class TV:
             self._volumen = volumen
 
     # Método get() para el número de televisores
-    def getNumTV(self):
-        return TV._numTV
+    @classmethod
+    def getNumTV(cls):
+        return cls._numTV
 
     # Método set() para el número de televisores
-    def setNumTV(self, numTV):
-        TV._numTV = numTV
+    @classmethod
+    def setNumTV(cls, numTV):
+        cls._numTV = numTV
 
     # Método get() para la marca
     def getMarca(self):
